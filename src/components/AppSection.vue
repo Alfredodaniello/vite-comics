@@ -57,7 +57,7 @@ export default {
 }
 .logo-container{
     img {
-    height: 60px;
+    height: 40px;
 }
 
 .description {
