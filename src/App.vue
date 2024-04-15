@@ -4,14 +4,18 @@ import AppContents from "./components/AppContents.vue";
 import AppSection from "./components/AppSection.vue";
 import AppFooterTop from "./components/AppFooterTop.vue";
 import AppFooterBot from "./components/AppFooterBot.vue";
+import Cards from "./components/Cards.vue";
+import Jumbotron from "./components/Jumbotron.vue";
 export default{
   components: {
     AppHeader,
     AppContents,
     AppSection,
     AppFooterTop,
-    AppFooterBot
-  }
+    AppFooterBot,
+    Cards,
+    Jumbotron,
+    }
 }
 </script>
 
@@ -22,7 +26,10 @@ export default{
 </header>
 
 <main>
-  <AppContents></AppContents>
+  <Jumbotron></Jumbotron>
+  <AppContents>
+    <Cards></Cards>
+  </AppContents>
   <AppSection></AppSection>
 </main>
 
